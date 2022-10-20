@@ -1,14 +1,14 @@
 
 class Vehicle:
-    Number of Doors = ''
+    NumberofDoors = ''
     Make = ''
     Model = ''
     Color = ''
 
 class Plane(Vehicle):
-    Number of wings = ''
-    propellers/jet engine = ''
-    Size Carrier = ''
+    NumberofWings = ''
+    jet_engines = ''
+    propellers = ''
 
 class Bike(Vehicle):
     Number of wheels = ''
