@@ -11,6 +11,6 @@ class Plane(Vehicle):
     propellers = ''
 
 class Bike(Vehicle):
-    Number of wheels = ''
+    NumberofWheels = ''
     Frame = ''
     
