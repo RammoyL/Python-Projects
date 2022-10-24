@@ -15,12 +15,30 @@ class User:
         else:
             print("The password or email you entered is incorrect.")
 
+
+
+
+#Chlid Class so technician can access softwares/database
+class Tech(User):
+    admin_ID = 'RL38013842'
+    user_key = '0990046'
+    password = 'Y776Lh&'
+# This is the same method in the parent class "User".
+# The difference is that, isntead of using entry_name, entry_email we're using admin_ID & entry_key.
+    def getLoginInfo(self):
+        admin_ID = input("Enter your ID#: ")
+        user_key = input("Enter key: ")
+        entry_password = input("Enter your password: ")
+        if (user_key == self.user_key and entry_password == self.password):
+            print("Welcome!")
+        else:
+            print("Your credentials we're not a match.")
+            
 #Child Class Employee
 class Employee(User):
-    nase_pay = 11.00
+    base_pay = 11.00
     department = 'General'
     pin_number = '3980'
-
 # This is the same method in the parent class "User".
 # The difference is that, isntead of using entry_passwordm we're using entry_pin.
 
@@ -40,3 +58,6 @@ customer.getLoginInfo()
 
 manager = Employee()
 manager.getLoginInfo()
+
+maintenance = Tech()
+maintenance.getLoginInfo()
