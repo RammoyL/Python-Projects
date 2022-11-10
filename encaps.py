@@ -2,10 +2,6 @@ class Protected:
     def __init__(self):
         self._protectedVar = 21
 
-class Protected:
-    def __init__(self):
-        self.__privateVar = 9
-
     def getPrivate(self):
         print(self.__privateVar)
 
