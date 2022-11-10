@@ -1,11 +1,11 @@
 
 
-from abc import ABC, abstraction
+from abc import ABC, abstractmethod
 class home(ABC):
     def rent(self, amount):
         print("Total amount due: ",amount)
 #this function wants us to pass in an argument, but we won't indicate how or what kind of data
-    @abstraction
+    @abstractmethod
     def payment(self, amount):
         pass
 
